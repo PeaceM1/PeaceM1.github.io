@@ -159,3 +159,14 @@
 .flex-item{
     margin-bottom: 50px;
 }
+
+.myBtn{
+    background: whitesmoke !important;
+    color: black !important;
+    border: none;
+}
+
+.myBtn:hover{
+    background: black !important;
+    color: white !important;
+}
