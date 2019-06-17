@@ -110,6 +110,10 @@
     background: var(--black);
 }
 
+.card:hover{
+    background: var(--gray);
+}
+
 .list-group-item {
     background: var(--black);
 }
@@ -135,6 +139,10 @@
 
 .card-text {
     color: white;
+}
+
+.card-text:hover{
+    color: var(--black);
 }
 
 .footer {
