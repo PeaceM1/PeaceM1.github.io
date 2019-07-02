@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             offset: '-=500',
         })
         .add({
-            targets: '.logo, .navbar .nav-item',
+            targets: '.logo, .navbar, .nav-item',
             opacity: [0, 1],
             translateY: [20, 0],
             delay: (el, i) => 100 * i,
