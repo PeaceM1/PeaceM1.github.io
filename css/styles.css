@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -110,7 +111,7 @@
     background: var(--black);
 }
 
-.card:hover{
+.card:hover {
     background: var(--gray);
 }
 
@@ -141,7 +142,7 @@
     color: white;
 }
 
-.card-text:hover{
+.card-text:hover {
     color: var(--black);
 }
 
@@ -156,17 +157,17 @@
 
 }
 
-.flex-item{
+.flex-item {
     margin-bottom: 50px;
 }
 
-.myBtn{
+.myBtn {
     background: whitesmoke !important;
     color: black !important;
     border: none;
 }
 
-.myBtn:hover{
+.myBtn:hover {
     background: black !important;
     color: white !important;
 }
