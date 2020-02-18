@@ -34,6 +34,9 @@
     cursor: pointer;
 }
 
+hr {
+    background-color: white;
+}
 .logo:hover {
     color: #06ADBF !important;
 }
@@ -48,11 +51,20 @@ body {
     font-family: var(--robcon);
 }
 
+strong {
+    font-weight: bold;
+    color: #06ADBF;
+}
+
 p {
     width: 35rem;
     font-family: var(--opensans);
     font-size: .8rem;
     line-height: 2;
+}
+
+a , button a {
+    text-decoration: none;
 }
 
 
@@ -98,6 +110,13 @@ p {
     color: #068BBF;
 }
 
+#title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--red) !important;
+   
+}
+
 .page {
     display: none;
   
@@ -134,6 +153,11 @@ p {
     display: none;
 }
 
+#connect {
+    margin-top: 40px;
+    font-style: normal !important;
+}
+
 #home h4 {
     font-family: var(--opensans);
     font-size: .8rem;
@@ -147,9 +171,9 @@ p {
     width: 10rem;
     height: 3rem;
     text-transform: uppercase;
-    color: var(--light-blue);
+    color: var(--white);
     margin-top: 3rem;
-    border-color: var(--red2);
+    border-color: var(--red);
 
 
 }
@@ -169,7 +193,8 @@ p {
 }
 
 #about h1 {
-    color: #06ADBF;
+    color: whitesmoke;
+    text-transform: uppercase;
 }
 
 #about p {
@@ -180,15 +205,93 @@ p {
 #skills {
     flex-direction: column;
     justify-content: center;
-    padding-left: 45px;
+    align-items: flex-start;
+    padding-left: 60px;
     background-color: rgba(12, 12, 12, .94);
     min-width: 93vw;
 }
 
-#skills h1 {
-    color: #07418C;
+#skills h1{
+    color:var(--white);
+    text-transform: uppercase;
 }
 
 #skills p {
     color: white;
 }
+
+#projects {
+    background-color: rgba(12, 12, 12, .94);
+    min-width: 93vw;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 20px 50px 20px;
+    width: 100%;
+}
+.box h3 {
+    font-family: var(--robcon);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    width: 18rem;
+    height: 18rem;
+    background-color:rgba(12, 12, 12, .65);
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: .4s;
+}
+
+.box .overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height:100%;
+    background-color:rgba(242, 242, 242, 1);
+    transition: .6s;
+    z-index: 3;
+    padding: auto 10px;
+    color: black;
+   
+}
+
+.box:hover .overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box .overlay p {
+    width: 80%;
+    text-align: center;
+   
+}
+
+.demo {
+    border: none;
+    background-color:rgba(30, 12, 12, .65);
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
