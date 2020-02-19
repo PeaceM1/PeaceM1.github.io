@@ -191,6 +191,8 @@ a , button a {
     color: var(--white);
     margin-top: 3rem;
     border-color: white;
+    cursor: pointer;
+    z-index: 2;
 
 
 }
