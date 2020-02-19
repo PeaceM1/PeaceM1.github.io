@@ -159,7 +159,7 @@ a , button a {
 }
 
 #home h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: white;
     text-transform: uppercase;
 
@@ -185,6 +185,7 @@ a , button a {
     font-size: 1rem;
     color: var(--gray);
     letter-spacing: 2px;
+   
 }
 
 #home button {
@@ -327,12 +328,18 @@ a , button a {
 
 #home h1 {
     font-size: 3rem;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #home h4{
     font-size: .7rem;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home h4 :nth-child(1){
+    margin-top: 2rem;
 }
 :target {
     min-width: 100%;
@@ -403,26 +410,9 @@ p {
     text-align: center;
 }
 
-
-
-
-
-
-
 }
 
-@media only screen and (min-width: 1400px){
 
-    h1 {
-        letter-spacing: 4px;
-        font-size: 4.5rem;
-    }
-    h4{
-        font-size: 2rem;
-    }
-  
-
-}
 
 
 
