@@ -269,7 +269,7 @@ a , button a {
     width: 18rem;
     height: 18rem;
     background-color:rgba(12, 12, 12, .65);
-    padding: 10px 10px;
+    padding: 25px 30px;
     margin-bottom: 20px;
     position: relative;
   
@@ -411,6 +411,24 @@ p {
 
 }
 
+@media only screen and (min-width: 968px){
+
+    h1 {
+        letter-spacing: 4px;
+        font-size: 5rem;
+    }
+    h4{
+        font-size: 2.1rem;
+    }
+    
+    p {
+        width: 50rem;
+        font-family: var(--opensans);
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+}
 
 
 
