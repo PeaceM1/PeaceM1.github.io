@@ -49,7 +49,7 @@ hr {
 h1 {
     font-family: var(--oswald);
     letter-spacing: 2px;
-    font-size: 3.3rem;
+    font-size: 4rem;
 }
 
 body {
@@ -182,7 +182,7 @@ a , button a {
 
 #home h4 {
     font-family: var(--opensans);
-    font-size: .8rem;
+    font-size: 1rem;
     color: var(--gray);
     letter-spacing: 2px;
 }
@@ -415,18 +415,12 @@ p {
 
     h1 {
         letter-spacing: 4px;
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     h4{
         font-size: 2rem;
     }
-    
-    p {
-        width: 50rem;
-        font-family: var(--opensans);
-        font-size: 1.5rem;
-        line-height: 2;
-    }
+  
 
 }
 
