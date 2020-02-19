@@ -411,20 +411,20 @@ p {
 
 }
 
-@media only screen and (min-width: 968px){
+@media only screen and (min-width: 1400px){
 
     h1 {
         letter-spacing: 4px;
-        font-size: 5rem;
+        font-size: 4rem;
     }
     h4{
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
     
     p {
         width: 50rem;
         font-family: var(--opensans);
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2;
     }
 
