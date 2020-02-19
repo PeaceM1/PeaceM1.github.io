@@ -254,23 +254,24 @@ a , button a {
     padding: 10px 10px;
     margin-bottom: 20px;
     position: relative;
-    transition: .4s;
+  
 }
 
 .box .overlay {
     position: absolute;
-    display: none;
+    opacity: 0;
     width: 100%;
     height:100%;
-    background-color:rgba(242, 242, 242, 1);
-    transition: .6s;
+    background-color:rgba(12, 12, 12, 1);
+   
     z-index: 3;
     padding: auto 10px;
-    color: black;
+    color: white;
    
 }
 
 .box:hover .overlay{
+    opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,6 +376,7 @@ display: none !important;
 
 p {
     width: 85vw;
+    text-align: center;
 }
 
 
