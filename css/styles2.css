@@ -127,6 +127,7 @@ a , button a {
     display: none;
     position: relative;
     z-index: 2;
+    overflow: hidden;
   
 }
 
@@ -313,6 +314,10 @@ a , button a {
     flex-direction: column-reverse;
 }
 
+#demo-canvas {
+    opacity: 0;
+}
+
 
 #home h1 {
     font-size: 3rem;
@@ -328,11 +333,14 @@ a , button a {
     min-height: 90vh;
 
 }
+.def, #skills, #about{
+    padding: 0;
+}
 
 .def{
-    min-height: 80vh;
+    min-height: 75vh;
     min-width: 100%;
-    padding-left: 0;
+   
 
 }
 .nav {
@@ -374,9 +382,7 @@ display: none !important;
     width: 110px;
    margin: 70px auto 0px auto;
 }
-#about {
-    text-align: center;
-}
+
 
  h1 {
     font-size: 2.5rem;
@@ -386,7 +392,8 @@ display: none !important;
 }
 
 p {
-    width: 85vw;
+    margin: 0 auto;
+    width: 93%;
     text-align: center;
 }
 
