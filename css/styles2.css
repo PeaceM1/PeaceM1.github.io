@@ -125,6 +125,8 @@ a , button a {
 
 .page {
     display: none;
+    position: relative;
+    z-index: 2;
   
 }
 
@@ -136,23 +138,32 @@ a , button a {
     flex-direction: column;
     justify-content: center;
     padding-left: 80px;
-    background: url('/img/mount.jpg');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 2000px rgba(12, 12, 12, .85);
+    position: relative;
+    z-index: 2;
+}
+
+#demo-canvas{
+    position: absolute;
+    z-index: 1;
 }
 
 #home h1 {
     margin-bottom: 1rem;
     color: white;
+    text-transform: uppercase;
 
 }
 
 :target {
     display: flex;
     min-height: 100vh;
+  
 }
 
 :target~.def {
@@ -319,7 +330,7 @@ a , button a {
 }
 
 .def{
-    min-height: 90vh;
+    min-height: 80vh;
     min-width: 100%;
     padding-left: 0;
 
