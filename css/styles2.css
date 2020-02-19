@@ -65,7 +65,7 @@ p {
 }
 
 a , button a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -287,6 +287,10 @@ a , button a {
     height: 2rem;
     text-transform: uppercase;
     border-radius: 2px;
+}
+
+.trans:hover {
+    transform: translateY(-8px);
 }
 
 
