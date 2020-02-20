@@ -187,6 +187,9 @@ a , button a {
     letter-spacing: 2px;
    
 }
+#home h4 :nth-child(2){
+    margin: 15px 0;
+}
 
 #home button {
     background: transparent;
@@ -253,6 +256,7 @@ a , button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin: 50px 20px 50px 20px;
     width: 100%;
 }
@@ -300,6 +304,9 @@ a , button a {
     width: 80%;
     text-align: center;
    
+}
+.box .overlay button {
+    margin: 0 auto;
 }
 
 .demo {
