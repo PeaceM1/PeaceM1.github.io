@@ -128,6 +128,7 @@ a , button a {
     position: relative;
     z-index: 2;
     overflow: hidden;
+    width: 100%;
   
 }
 
