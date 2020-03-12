@@ -31,6 +31,7 @@
     font-family: var(--lfont) !important;
     color: var(--red) !important;
     margin-top: 4px;
+    padding-left:15px ;
     cursor: pointer;
     
 }
@@ -85,7 +86,7 @@ a , button a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 80px;
+    min-width: 7vw;
     justify-content: space-between;
     background-color: rgba(12, 12, 12, .98);
     padding-left: 15px;
@@ -93,6 +94,7 @@ a , button a {
 
 .nav ul {
     list-style-type: none;
+    padding: 10px;
   
 }
 
