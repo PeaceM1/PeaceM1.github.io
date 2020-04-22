@@ -250,6 +250,8 @@ header {
     height: 100%;
 }
 
+
+
 #home, #about, #skills {
     display: flex;
     flex-direction: column;

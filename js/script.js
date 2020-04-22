@@ -9,18 +9,7 @@ if(currentTheme){
     body.classList.add('dark-theme');
 }
 
-
-
-window.onload = function(){
-    let file = location.pathname.split("/").slice(-1)
-    // if(file[0] === 'index.html'){
-      this.openTab('home')
-    // }
-    if(navList.classList.contains("active")){
-       
-    }
-    
-  }
+openTab("home");
   
 
 hamburger.addEventListener('click', () => {
