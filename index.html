@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/900c473be5.js"></script>
-
-    <link rel="stylesheet" href="/css/styles2.css">
-    <link rel="stylesheet" href="/css/effects.css">
     <link rel="icon" href="/img/rm.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="https://kit.fontawesome.com/900c473be5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <title>RM | Software Developer</title>
 </head>
-
 <body>
-    <div class="container-fluid  view">
-        <div class="nav">
-            <a class="logo" href="#home">RM</a>
-            <ul>
-                <li title="Home"><a href="#home"><i class="fas fa-home fa-2x"></i></a></li>
-                <li title="About"><a href="#about"><i class="far fa-address-card fa-2x"></i></a></li>
-                <li title="Skills"><a href="#skills"><i class="fas fa-cog fa-2x"></i></a></li>
-                <li title="Projects"><a href="#projects"><i class="far fa-eye fa-2x"></i></a></li>
-                <li title="Contact"><a href="mailto:robertmagomero@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>
+    <div class="container">
+        <header>
+            <div id="toggle">
+                <i class="fas fa-adjust"></i>
+            </div>
+              
+           
+            
+            <a class="logo" href="#home" onclick="openTab('home')">RM</a>
+            <ul class="nav-list">
+                <li class="nav-item" title="Home"><a onclick="openTab('home')" href="#home">Home.</a></li>
+                <li class="nav-item" title="About"><a onclick="openTab('about')" href="#about">About.</a></li>
+                <li class="nav-item" title="Skills"><a onclick="openTab('skills')" href="#skills">Skills.</a></li>
+                <li class="nav-item" title="Projects"><a onclick="openTab('projects')" href="#projects">Projects.</a></li>
+                <li class="nav-item" title="Contact"><a onclick="openTab('contact')" href="mailto:robertmagomero@gmail.com">Email.</a></li>
             </ul>
 
-            <ul class="social">
-                <li><a href="https://www.linkedin.com/in/robert-magomero-6551a0123/">linkedin</a></li>
-                <li><a href="https://drive.google.com/open?id=1IoCVhtsObfeOIDJZq3QJdiG2hxvqVeGI">resume</a></li>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/robert-magomero-6551a0123/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://drive.google.com/open?id=1IoCVhtsObfeOIDJZq3QJdiG2hxvqVeGI"><i class="far fa-file"></i></a></li>
+                <li><a href="https://github.com/devrobx"><i class="fab fa-github"></i></a></li>
             </ul>
-        </div>
-    
-        <div class="pages">
-            <div class="page" id="about">
-              
-                <h1>About me.</h1>
-                <p>I've always loved the process of creating. Bringing ideas to life truly brings me maximum joy.
-                    The limitless nature of software development is what drew me to the profession. Technology is 
-                    forever evolving and the challenges will never cease to end. You can learn more about my <a href="#skills">Skills</a> and <a href="#projects">Projects</a> for more information.
-                </p>
-                <p>If you need help bringing you website goals to life, I am your guy</p>
-                <p>I am open to job and freelance opportunities, feel free to <a href="#contact">Contact me</a>.</p>
-   
+
+            <div class="hamburger">
+                <div class="bar"></div>
             </div>
-            <div class="page" id="skills">
-               
+        </header>
+        <div class="content">
+            <div class="tab" id="home">
+                <h1>Hi,</h1>
+                <h1>I'm Rob.</h1>
+                <h4 id="title">Software Developer | Freelancer | Visual Artist</h4>
+                <h4>New Jersey, USA <i class="fas fa-map-marker"></i></h4>
+                <h4 id="tag-line">I create simple and compelling websites and applications</h4>
+                <h4 id="connect">I am open to freelance or job opportunities, connect with me!</h4>
+                <button><a href='mailto:robertmagomero@gmail.com'>Let's Connect.</a></button>
+            </div>
+            <div class="tab" id="about">
+                <div class="photo">
+                    <img src="/img/linked.jpg" alt="">
+                </div>
+                <h1>About me.</h1>
+                <p>Hi, I am Software Developer based in New Jersey. 
+                    I enjoy building and designing simple and compelling websites and applications. I am most proficient in front end development but I am comfortable in backend technologies as well.
+                    My main goal with software development is to exceed client expectations and create the best possible product for my clients need. Additionally, I just love building things that interest me.
+                    I currently work at ADP as a QA Engineer/Assoc. Appl Developer,and Freelance as a Software Developer and Photographer.
+                </p> 
+                <p>You can gain a better understanding of my skills, please visit my <a href="#skills" onclick="openTab('skills')">Skills</a> and <a href="#projects" onclick="openTab('projects')">Projects</a> for more information.</p>
+                <p>I am open to job and freelance opportunities, feel free to <a href="#contact" onclick="openTab('contact')">Contact me</a>.</p>
+            </div>
+            <div class="tab" id="skills">
                 <h1>Skills.</h1>
                 <p>I am most competent with front-end development but I have additional experience with back-end development. </p>
                 <p>I am proficient in front end languages such as <strong>HTML,CSS, and Javascript</strong>. I am well versed with <strong>React</strong> framework
@@ -59,109 +68,76 @@
                 <p>On the backend, I use <strong>NodeJS + Express</strong>. I am familiar with <strong>Java + SpringBoot framework </strong> 
                         with database knowledge of <strong>MySQL and MongoDB</strong>.</p>
                 <p>I also have experience with: <strong>Redux, Postman, Photoshop, GIT, Rally/Jira, Jenkins</strong>.</p>
-
-                        <p>Visit my <a href="https://www.linkedin.com/in/robert-magomero-6551a0123/">LinkedIn</a> profile for more 
-                        information or <a href="mailto:robertmagomero@gmail.com">Contact me</a>.</p>
-              
-                </div>
-                
-            
-               
             </div>
-            <div class="page" id="projects">
-                <div class="boxes">
-                    <div class="box trans">
-                        <h3>READI</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>simple and clean website created for Rutgers athletic organization</p>
-                            <p>created with <strong>React and Node + Express with nodemailer</strong> for email service</p>
-                            <button class="demo"><a href="https://intense-caverns-65438.herokuapp.com/">Demo</a></button>
-                        </div>
+            <div class="tab" id="projects">
+                <div class="box trans">
+                    <h3>READI</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>simple and clean website created for Rutgers athletic organization</p>
+                        <p>created with <strong>React and Node + Express with nodemailer</strong> for email service</p>
+                        <button class="demo"><a href="https://intense-caverns-65438.herokuapp.com/">Demo</a></button>
                     </div>
-                    <div class="box trans">
-                        <h3>FITCALC</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>fitness calculator web application that includes most common fitness calculator on one page</p>
-                            <p>created with <strong>HTML, CSS and vanilla Javascript</strong> </p>
-                            <button class="demo"><a href="https://fitcalc2.herokuapp.com/">Demo</a></button>
-                        </div>
+                </div>
+                <div class="box trans">
+                    <h3>FITCALC</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>fitness calculator web application that includes most common fitness calculator on one page</p>
+                        <p>created with <strong>HTML, CSS and vanilla Javascript</strong> </p>
+                        <button class="demo"><a href="https://fitcalc2.herokuapp.com/">Demo</a></button>
                     </div>
-                    <div class="box trans">
-                        <h3>PRIVATE CHAT APP</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>creating a website that will allow friends to watch youtube together from any location</p>
-                            <p>developing with <strong>Handlebars , Node + Express, Youtube API and socket.io</strong> </p>
-                            <button class="demo" disabled style="background-color: gray;">In progress</button>
-                        </div>
+                </div>
+                <div class="box trans">
+                    <h3>PRIVATE CHAT APP</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>creating a web app that will allow friends to connect and play multiplayer games</p>
+                        <p>developing with <strong>Handlebars , Node + Express,socket.io</strong> </p>
+                        <button class="demo" disabled style="background-color: gray;">In progress</button>
                     </div>
-                    <div class="box trans">
-                        <h3>Daily Journal</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>a private online journaling site</p>
-                            <p>developing with <strong>Handlebars , Node + Express, Mongo DB and Passport auth</strong> </p>
-                            <button class="demo"><a href="https://dailyjournalapp.herokuapp.com/">Demo</a></button>
-                        </div>
+                </div>
+                <div class="box trans">
+                    <h3>Daily Journal</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>a private online journaling site</p>
+                        <p>developing with <strong>Handlebars , Node + Express, Mongo DB and Passport auth</strong> </p>
+                        <button class="demo"><a href="https://dailyjournalapp.herokuapp.com/">Demo</a></button>
                     </div>
-                    <div class="box trans">
-                        <h3>Bar Beer Drinker</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>collaborated on an application that highlighted bars, beers, and drinkers across the US</p>
-                            <p>Queried a large set of data to compute interesting analytics data on bars, beers, and drinkers</p>
-                            <p>developed with <strong>Angular 2,HTML,  CSS, Python and Flask</strong> </p>
-                           
-                        </div>
+                </div>
+                <div class="box trans">
+                    <h3>Bar Beer Drinker</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>collaborated on an application that highlighted bars, beers, and drinkers across the US</p>
+                        <p>Queried a large set of data to compute interesting analytics data on bars, beers, and drinkers</p>
+                        <p>developed with <strong>Angular 2,HTML,  CSS, Python and Flask</strong> </p>
+                       
                     </div>
-                    <div class="box trans">
-                        <h3>Portfolio</h3>
-                        <hr>
-                        
-                        <div class="overlay">
-                            <p>created this portfolio site to highlight my software development experience</p>
-                          
-                            <p>developed with <strong>HTML, CSS and Javascript</strong> </p>
-                           
-                        </div>
+                </div>
+                <div class="box trans">
+                    <h3>Portfolio</h3>
+                    <hr>
+                    
+                    <div class="overlay">
+                        <p>created this portfolio site to highlight my software development experience</p>
+                      
+                        <p>developed with <strong>HTML, CSS and Javascript</strong> </p>
+                       
                     </div>
                 </div>
             </div>
-            <div class="page" id="contact">Contact.</div>
-            <div class="page def" id="home">
-                <canvas id="demo-canvas"></canvas>
-                <h1>Hi,</h1>
-                <h1>I'm Rob.</h1>
-                <h4 id="title">Software Developer | Freelancer | Visual Artist</h4>
-                <h4>New Jersey, USA <i class="fas fa-map-marker"></i></h4>
-                <h4>I create simple and compelling websites and applications</h4>
-                <h4 id="connect">I am open to freelance or job opportunities, connect with me!</h4>
-                <button><a href='mailto:robertmagomero@gmail.com'>Let's Connect.</a></button>
-            </div>
+            <div class="tab" id="contact"></div>
 
         </div>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-    <script src="./js/anime.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
-
 </html>

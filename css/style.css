@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Press+Start+2P|Roboto|Roboto+Condensed&display=swap');
+
+
+:root {
+    /* fonts */
+    --roboto: 'Roboto', sans-serif;
+    --opensans: 'Open Sans', sans-serif;
+    --robcon: 'Roboto Condensed', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+    --lfont: 'Press Start 2P', cursive;
+
+
+    /* colors */
+    --bg: rgba(242, 242, 242, 1);
+    --text:  rgba(0,0,0,.8);
+    --fg: #eee;
+    --accent: #F20505;
+    --gray: rgba(214, 216, 218, 1);
+    --blend-mode: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-theme {
+    --bg: #292B2E;
+    --text: rgba(242, 242, 242, 1);
+    --fg: rgba(31, 28, 38, 1);
+    --blend-mode: normal;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    width: 50%;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    
+}
+
+
+
+button {
+    padding: 8px 3rem;
+    border: 5px solid lightgrey;
+    background-color: var(--fg);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: all .3s;
+    border-color: var(--accent);
+   
+}
+
+button a , button {
+    text-decoration: none;
+    color: var(--text);
+   
+}
+button a:hover {
+    color: var(--accent);
+}
+.logo {
+    font-family: var(--lfont) !important;
+    font-size: 1.5rem;
+    color: var(--text);
+    margin-top: 4px;
+    padding-left:15px ;
+    cursor: pointer;
+    text-decoration: none;  
+    transition: color .4s;
+    flex: 1;
+}
+
+#toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+
+}
+
+.fa-adjust {
+    font-size: 1.5rem;
+    color: var(--text);
+    transition: color .2s;
+    cursor: pointer;
+}
+
+.fa-adjust:hover, #toggle:hover {
+    color: var(--accent);
+}
+
+
+#title {
+    color: var(--accent);
+   
+}
+
+#title , #tag-line{
+    margin-bottom: 10px;
+}
+.logo:hover{
+    color: var(--accent);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+header {
+    padding: 15px 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+   
+}
+
+.nav-item{
+    text-transform: uppercase;
+    font-family: var(--lfont);
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-item a:hover {
+    color: var(--accent);
+}
+
+.hamburger {
+    width: 4rem;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+}
+
+.bar {
+    margin: 15px 0;
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background-color: var(--text);
+    display: none;
+    cursor: pointer;
+}
+
+.bar::before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: var(--text);
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    transition:  all .2s;
+}
+
+.bar::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: var(--text);
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition:  all .2s;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+   
+}
+
+.socials li {
+    margin: 5px 5px;;
+}
+.fa-linkedin, .fa-file, .fa-github{
+    color: var(--text);
+    font-size: 1.3rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  
+}
+
+.photo {
+    width: 16rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+#home, #about, #skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 20px 50px 20px;
+    width: 100%;
+    height: 100%;
+}
+.box h3 {
+    font-family: var(--robcon);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--text);
+    width: 18rem;
+    height: 18rem;
+    background-color: var(--fg);
+    padding: 25px 30px;
+    margin: 20px 10px;
+    position: relative;
+    transition: all .2s;
+  
+}
+
+.box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height:100%;
+    background-color:var(--bg);
+   
+    z-index: 3;
+    padding: auto 10px;
+    color: var(--text);
+   
+}
+
+.box:hover .overlay{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box .overlay p {
+    width: 80%;
+    text-align: center;
+    font-size: .8rem;
+   
+}
+.box .overlay button {
+    margin: 0 auto;
+    padding: 5px 2rem;
+}
+
+@media only screen and (max-width: 1200px){
+
+    .nav-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        display: none;
+        transition: all .2s;
+        background-color: var(--bg);
+        text-align: center;
+        z-index: 12;
+    }
+    .nav-item {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .active {
+        display: flex;
+    }
+
+  
+    .bar {
+        display: inline-block;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        z-index: 12;
+    }
+    
+    .socials li {
+        margin: 5px 5px;;
+    }
+    .fa-linkedin, .fa-file, .fa-github{
+        color: var(--text);
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    h1{
+        font-size: 3.5rem;;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 675px){
+    #home, #about, #skills {
+        padding-top: 40px;
+    }
+
+
+    header {
+        padding: 15px 2rem;
+    }
+
+    .hamburger {
+        width: 2rem;
+    }
+
+    h1{
+        font-size: 3.2rem;;
+    }
+
+    h4 {
+        font-size: .8rem;
+    }
+
+    button {
+        font-size: .7rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .fa-linkedin, .fa-file, .fa-github{
+        color: var(--text);
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+
+    .photo {
+        width: 170px;
+        
+    }
+
+    .logo{
+         font-size: 1rem;
+    }
+    h1{
+        font-size: 2.8rem;;
+    }
+
+    h4 {
+        font-size: .3rem;
+    }
+
+    button {
+        font-size: .5rem;
+    }
+
+    p {
+        font-size: .6rem;
+    }
+   
+    .box {
+        width: 14rem;
+        height: 14rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    #toggle {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .logo{
+         font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: .1;
+        text-align: center;
+    }
+
+    button {
+        font-size: .1rem;
+        padding: 5px 1rem;
+    }
+
+    p {
+        font-size: .2rem;
+    }
+
+}
