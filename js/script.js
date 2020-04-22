@@ -13,9 +13,9 @@ if(currentTheme){
 
 window.onload = function(){
     let file = location.pathname.split("/").slice(-1)
-    if(file[0] === 'index.html'){
+    // if(file[0] === 'index.html'){
       this.openTab('home')
-    }
+    // }
     if(navList.classList.contains("active")){
        
     }
