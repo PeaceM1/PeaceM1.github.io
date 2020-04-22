@@ -96,6 +96,10 @@ button a:hover {
     flex: 1;
 }
 
+strong {
+    color: var(--accent);
+}
+
 #toggle {
     position: fixed;
     bottom: 20px;
