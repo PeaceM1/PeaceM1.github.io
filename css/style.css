@@ -11,10 +11,10 @@
 
 
     /* colors */
-    --bg: rgba(242, 242, 242, 1);
+    --bg: #F2E0DF;
     --text:  rgba(0,0,0,.8);
     --fg: #eee;
-    --accent: #F20505;
+    --accent: #8DA656;
     --gray: rgba(214, 216, 218, 1);
     --blend-mode: normal;
 
@@ -40,7 +40,7 @@ body {
 
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -48,10 +48,11 @@ h1 {
 
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 
 p {
     width: 50%;
@@ -62,7 +63,9 @@ p {
     
 }
 
-
+#link {
+    color: #8DA656;
+}
 
 button {
     padding: 8px 3rem;
@@ -85,7 +88,7 @@ button a:hover {
     color: var(--accent);
 }
 .logo {
-    font-family: var(--lfont) !important;
+    font-family: var(--roboto) !important;
     font-size: 1.5rem;
     color: var(--text);
     margin-top: 4px;
@@ -244,7 +247,7 @@ header {
 }
 
 .photo {
-    width: 16rem;
+    width: 12rem;
     height: auto;
     margin-bottom: 10px;
 }
@@ -261,7 +264,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 
@@ -409,11 +412,11 @@ header {
     }
 
     h1{
-        font-size: 3.2rem;;
+        font-size: 2rem;;
     }
 
     h4 {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     button {
@@ -442,11 +445,11 @@ header {
          font-size: 1rem;
     }
     h1{
-        font-size: 2.8rem;;
+        font-size: 1.7rem;;
     }
 
     h4 {
-        font-size: .3rem;
+        font-size: .5rem;
     }
 
     button {
@@ -479,17 +482,17 @@ header {
     }
 
     h4 {
-        font-size: .1;
+        font-size: 1rem;
         text-align: center;
     }
 
     button {
-        font-size: .1rem;
+        font-size: .7rem;
         padding: 5px 1rem;
     }
 
     p {
-        font-size: .2rem;
+        font-size: .8rem;
     }
 
 }
