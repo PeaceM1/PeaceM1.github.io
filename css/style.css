@@ -17,6 +17,7 @@
     --accent: #8DA656;
     --gray: rgba(214, 216, 218, 1);
     --blend-mode: normal;
+    --orange: #F25C05;
 
 }
 
@@ -27,10 +28,11 @@
 }
 
 .dark-theme {
-    --bg: #292B2E;
+    --bg: #2C3532;
     --text: rgba(242, 242, 242, 1);
     --fg: rgba(31, 28, 38, 1);
     --blend-mode: normal;
+    --orange: #F25C05;
 }
 
 body {
@@ -62,6 +64,15 @@ p {
     padding: 10px 0;
     
 }
+
+#connect {
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+/* .p-header {
+    color: var(--accent);
+} */
 
 #link {
     color: #8DA656;
@@ -259,7 +270,7 @@ header {
 
 
 
-#home, #about, #skills {
+#home, #about, #skills , .p_pages{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,6 +299,8 @@ header {
     font-family: var(--robcon);
     font-size: 1.2rem;
     text-transform: uppercase;
+    text-align: center;
+    flex: 0 0 120px
 }
 .box{
     display: flex;
@@ -295,14 +308,13 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     color: var(--text);
-    width: 18rem;
-    height: 18rem;
+    width: 18.4rem;
+    height: 18.4rem;
     background-color: var(--fg);
     padding: 25px 30px;
     margin: 20px 10px;
     position: relative;
     transition: all .2s;
-  
 }
 
 .box .overlay {
