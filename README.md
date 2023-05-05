@@ -1,2 +1,2 @@
-Na'Mira Crosby's Portfolio Website
-Data Analyst | Data Engineer
+Peace Magomero's Portfolio Website
+Software Engineer
